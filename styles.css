@@ -1,0 +1,33 @@
+.slide {
+    border: 3px solid orangered;
+    width: auto;
+    position: absolute;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    background-color: bisque;
+}
+
+.slide>* {
+    border: 3px solid blue;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    transition: all .2s;
+}
+
+.slide>*:hover {
+    cursor: pointer;
+}
+
+.slide>*:active {
+    transform: scale(0.8);
+}
+
+.slide__9 {
+    grid-area: 3/3/4/4;
+    visibility: hidden;
+}
